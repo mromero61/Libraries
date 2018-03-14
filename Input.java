@@ -58,9 +58,9 @@ public class Input {
 	}
 
 	static {	// Static blocks are called when the program is run. This "constructs" the class resources
-		Keys = new ArrayList<>(64);	//This sets up the ArrayLists with a default of 32 keys
-		KeyPressed = new ArrayList<>(64);
-		KeyLastState = new ArrayList<>(64);
+		Keys = new ArrayList<>(32);	//This sets up the ArrayLists with a default of 32 keys
+		KeyPressed = new ArrayList<>(32);
+		KeyLastState = new ArrayList<>(32);
 		KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(new KeyEventDispatcher() {	//This sets up the listener, which captures all events and stores them in a more useful manner
 			@Override
 			public boolean dispatchKeyEvent(KeyEvent e) {
